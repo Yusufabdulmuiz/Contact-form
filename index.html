@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<!--meta og --> 
+<meta name="author" content="Abdulmuiz || Dev.Abu Ridwan">
+<meta property="og:title" content="Contact Form">
+<meta property="og:type" content="website">
+<meta property="og:description" content="A simple and efficient contact form for collecting user inquiries and feedback.">
+<meta property="og:image" content="https://live.staticflickr.com/65535/54039026320_a3eb0cdf3d_n.jpg">
+<meta property="og:site_name" content="Contact Us Form"> 
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Contact form | Dev.abu ridwan</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="title">
+      <h1>Contact Us</h1>
+    </div>
+    
+    
+    <form action="" id="form"> 
+    
+      <fieldset>
+        
+        <div class="bio">
+          <!--first Name-->
+          <div class="fistName">
+             <label for="f-Name">First Name <span>*</span></label>
+  <div class="FN-input">
+  <input id="f-Name" type="text">
+  <small class="fNameErrMssg"></small>
+  </div> 
+          </div>
+          
+          <!--Last Name-->
+          
+             <div class="lastName">
+               <label for="l-Name">Last Name <span>*</span></label>
+               <div class="LN-input">
+                 <input id="l-Name" type="text">
+                 <small class="lNameErrMssg"></small>
+               </div>
+             </div>
+      </div>
+
+      </fieldset>
+      
+      <!--email---->
+      <fieldset>
+           <div class="mail">
+             <label for="email">Email Address <span>*</span> 
+             </label>
+            <div class="mail-input">
+               <input id="email" type="email">
+               <small class="mailErrorMssg"></small>
+             </div>
+           </div>
+      </fieldset>
+      
+      
+      
+      
+      <fieldset class="queryFieldset">
+        <label>Query type <span>*</span></label>
+        <div class="queryContainer">
+          
+       <div class="query">
+         <input type="radio" name="query" id="query-one">
+      <label for="query-one">General query</label>
+         
+       </div>
+       
+
+       
+          <div class="query">
+            <input type="radio" name="query" id="query-two" >
+            <label for="query-two">Support request</label>
+            
+          </div>
+        </div>
+      
+      
+      <small class="queryErrorMssg"></small>
+      </fieldset>
+      
+      
+      <fieldset>
+        <div class="messagContainer">
+          
+                 <label for="message">Message <span>*</span></label>
+              <textarea name="Message" id="message" rows="13" >
+          
+        </textarea>
+        <small class="textErrorMssg"></small>
+        </div>
+
+    
+        
+      </fieldset>
+      <fieldset class="consentWrapper" >
+
+        <div class="consent">
+                  <input type="checkbox" name="consentTerm" id="consent"> <label for="consent">I consent to being contacted by the team <span>*</span> </label> 
+        
+        </div>
+        <small class="consentErrorMssg"></small>
+    
+      </fieldset>
+      <button type="submit" id="btn"> Submit</button>
+    </form>
+    
+    <div class="notification">
+     
+      </div>
+     
+  </div>
+  
+</body>
+</html>
